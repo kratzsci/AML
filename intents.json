@@ -1,23 +1,35 @@
-data = {"intents": [
-             {"tag": "greeting",
-              "patterns": ["Hello", "How are you?", "Hi there", "Hi", "Whats up"],
-              "responses": ["Howdy Partner!", "Hello", "How are you doing?", "Greetings!", "How do you do?"],
-             },
-             {"tag": "age",
-              "patterns": ["how old are you?", "when is your birthday?", "when was you born?"],
-              "responses": ["I am 24 years old", "I was born in 1996", "My birthday is July 3rd and I was born in 1996", "03/07/1996"]
-             },
-             {"tag": "date",
-              "patterns": ["what are you doing this weekend?",
-"do you want to hang out some time?", "what are your plans for this week"],
-              "responses": ["I am available all week", "I don't have any plans", "I am not busy"]
-             },
-             {"tag": "name",
-              "patterns": ["what's your name?", "what are you called?", "who are you?"],
-              "responses": ["My name is Kippi", "I'm Kippi", "Kippi"]
-             },
-             {"tag": "goodbye",
-              "patterns": [ "bye", "g2g", "see ya", "adios", "cya"],
-              "responses": ["It was nice speaking to you", "See you later", "Speak soon!"]
-             }
-]}
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I.m Joana, your bot assistant", "I'm Joana, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Joana.", "I'm Joana!", "Just call me as Joana"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+    },
+    {"tag": "complaint",
+    "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+    }
+]
+}
