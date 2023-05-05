@@ -72,7 +72,7 @@ def weather():
         weather_description = z[0]["description"]
 
         # print following values
-        print(" The weather in " + city_name + " is " +
+        print(Fore.GREEN + "ChatBot:" + Style.RESET_ALL + " The weather in " + city_name + " is " +
               str(weather_description) + " with a temperature of " +
                         str(current_temperature) + "F and humidity of " +
                         str(current_humidity) + "%" )
